@@ -10,7 +10,7 @@ public class Main {
         // a) It should take an integer array
         // b) It should take a string which defines what sorter it will use.
         int[] arrayToSort = {5,4,3,2,1};
-        int[] sortedArray = sort(arrayToSort, SorterWrapper.BUBBLE_SORT);
+        int[] sortedArray = sort(arrayToSort, SorterWrapper.Insertion_Sort);
         for(int i : sortedArray) {
             System.out.println("Sorted " + i);
         }
