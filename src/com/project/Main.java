@@ -10,16 +10,20 @@ public class Main {
         // a) It should take an integer array
         // b) It should take a string which defines what sorter it will use.
         int[] arrayToSort = {5,4,3,2,1};
-        int[] sortedArray = sort(arrayToSort, SorterWrapper.Insertion_Sort);
-        for(int i : sortedArray) {
-            System.out.println("Sorted " + i);
-        }
+        sort(arrayToSort, SorterWrapper.Insertion_Sort);
+
     }
 
-    public static int[] sort(int[] arrayToSort, String sorterName) {
+
+
+    public static void sort(int[] arrayToSort, String sorterName) {
         SorterWrapper sorter = new SorterWrapper();
         sorter.setSortingMethod(sorterName);
-        return sorter.sort(arrayToSort);
+        int [] sorted = sorter.sort(arrayToSort);
+        for(int i : sorted) {
+            System.out.println("Sorted " + i);
+        }
+
     }
 
 }
