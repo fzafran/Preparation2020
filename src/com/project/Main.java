@@ -20,45 +20,59 @@ public class Main {
 //    }
 
         {
-            int n = 0;
+//            int n = 0;
+//            Scanner s = new Scanner(System.in);
+//            System.out.print("Enter no. of elements you want in array:");
+//            n = s.nextInt();
+//            int a[] = new int[n];
+//            System.out.println("First value entered by User :");
+//
+//            a[n] = s.nextInt();
+//
+//            System.out.println(" Second value entered by User:");
+//            n = s.nextInt();
+//
+//
+//
+//            System.out.println(" Third value entered by User  :");
+//            n = s.nextInt();
+//
+//            System.out.println("Forth value entered by User  :");
+//            n = s.nextInt();
+//
+//            System.out.println(" Fifth value entered by User  :");
+//            n = s.nextInt();
+//
+//            System.out.println(" six value entered by User:");
+//            n = s.nextInt();
+//
+//            System.out.println(" Seven value entered by User :");
+//            n = s.nextInt();
+//
+//            System.out.println(" Eight value entered by User  :");
+//            n = s.nextInt();
+//
+//            System.out.println(" Nine value entered by User :");
+//            n = s.nextInt();
+//
+//            System.out.println(" Tenth value entered by User:");
+//            for (int i = 0; i < n; i++) {
+//                System.out.println(a[i]);
+//            }
+
             Scanner s = new Scanner(System.in);
-            System.out.print("Enter no. of elements you want in array:");
-            n = s.nextInt();
-            int a[] = new int[n];
-            System.out.println("First value entered by User :");
-
-            n = s.nextInt();
-
-            System.out.println(" Second value entered by User:");
-            n = s.nextInt();
-
-
-
-            System.out.println(" Third value entered by User  :");
-            n = s.nextInt();
-
-            System.out.println("Forth value entered by User  :");
-            n = s.nextInt();
-
-            System.out.println(" Fifth value entered by User  :");
-            n = s.nextInt();
-
-            System.out.println(" six value entered by User:");
-            n = s.nextInt();
-
-            System.out.println(" Seven value entered by User :");
-            n = s.nextInt();
-
-            System.out.println(" Eight value entered by User  :");
-            n = s.nextInt();
-
-            System.out.println(" Nine value entered by User :");
-            n = s.nextInt();
-
-            System.out.println(" Tenth value entered by User:");
-            for (int i = 0; i < n; i++) {
-                a[i] = s.nextInt();
+            System.out.println("input number you want to enter? ");
+            int n = s.nextInt();
+            int userNumberArray[] = new int[n];
+            for(int i=0; i<n; i++) {
+                System.out.println("enter value for " + i);
+                userNumberArray[i] = s.nextInt();
             }
+
+            for(int j = 0; j < userNumberArray.length; j++) {
+                System.out.println("User entered value :" + userNumberArray[j] + "\n");
+            }
+
         }
     }
 }
